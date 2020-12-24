@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  </style>
+    
+  <title>NUMBER GUESSER</title>
+</head>
+<body>
+  <!-- arcade top -->
+  <div class="top">
+    <h1 id="h1" class="glow">NUMBER GUESSER</h1> 
+  </div>
+  <!-- arcade screen -->
+  <div class="all">
+    <div class="staticBg">
+      <!-- sun -->
+        <img class="sun" src="images/sun.webp">
+      <!-- player1 start -->
+      <div class="player1">
+        <span id="type-text" class="retro" >...</span>
+        <span class="retro">_</span>
+      </div>
+      <!-- game instruction -->
+        <p id="instruct" class="instruction retro" hidden>  Guess a number between <span class="min-num"></span> and <span class="max-num"></span>
+        </p>
+      <!-- game message -->
+        <p id="game" hidden class="message retro"></p>
+       <!-- hearts -->
+       <div class="life" hidden>
+        <img class="heart1 first" src="images/heart1.jpg"><img class="heart1 second" src="images/heart1.jpg"><img class="heart1 third" src="images/heart1.jpg">
+      </div>
+ <!-- control panel -->
+      <div class="controlPanel pressStart">
+        <div class="controlBtns">
+        <button id="startBtn" type="button">START</button>
+        <button   id="guessBtn" type="button">Guess</button>
+        <button id="playAgain" type="button" onclick="window.location.reload()">PLAY<br>AGAIN</button>
+        <input type="number" id="guess-input" placeholder="0">
+      </div>
+      </div>
+
+      <img class="overlayImg" src="images/overlayFull.png">
+    </div>
+  </div>
+
+  
+  <script src="textcode.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

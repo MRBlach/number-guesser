@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+.top {
+  background-image: url('images/gridTop.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 30vh;
+  border-bottom: rgb(45, 2, 75) 2px solid;
+  justify-content: center;
+}
+.staticBg {
+  background-image: url('images/static1.gif');
+  position: relative;
+}
+.overlayImg {
+  width: 100%;
+  height: auto;
+}
+.sun {
+position: absolute;
+top: 1%;
+left: 25%;
+width: 50%;
+height: auto;
+border-radius: 20%;
+}
+.player1,
+.instruction {
+  font-size: 40%;
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  text-align: center;
+  color: aliceblue;
+  width: 60%;
+  height: auto;
+}
+#game {
+  position: absolute;
+  top: 21%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+}
+.instruction {
+  font-size: 75%;
+  top: 10%;
+}
+
+
+.life {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+.heart1 {
+  width: 15%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(255, 51, 0);
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: -2px 2px black,
+               -3px 3px blue,
+               -4px 4px blue,
+               -5px 5px blue,
+               -6px 6px blue,
+               -7px 7px 5px blue,
+                2px 2px black,
+                2px -2px black,
+               -2px -2px black;
+               
+}
+
+.retro {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: -2px 2px black,
+                2px 2px black,
+                2px -2px black,
+               -2px -2px black;
+}
+.controlPanel {
+  padding: 0;
+  width: 90%;
+  height: 20%;
+  margin-left: 5%;
+  position: absolute;
+  top: 40%;
+  
+}
+.controlBtns {
+  position: relative;
+  margin: 0 5%;
+  padding: 30px 50px;
+}
+
+#startBtn,
+#guessBtn,
+#playAgain {
+  font-size: 70%;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  border: double;
+  border-color: black;
+  border-radius: 50%;
+  box-shadow: 0 6px rgb(43, 41, 41);
+}
+#startBtn:active {
+  background-color: rgb(128, 190, 3);
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+#startBtn {
+  background-color: rgb(170, 255, 0);
+  padding: 10px 2px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#guessBtn:active {
+  background-color: rgb(3, 180, 3);
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+#guessBtn {
+  background-color: rgb(0, 255, 0);
+  padding: 10px 2px;
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  
+}
+#playAgain:active {
+  background-color: rgb(65, 4, 179);
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+#playAgain {
+  background-color: rgb(89, 0, 255);
+  padding: 5px 2px;
+  position: absolute;
+  top: 90%;
+  left: 0;
+}
+input {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 50px;
+  height: 25px;
+  border-radius: 20%;
+
+  position: absolute;
+  top: 60%;
+  right: 30%;
+}
+.message {
+  position: absolute;
+  font-size: 50%;
+  line-height: 150%;
+  text-shadow: -2px 2px black,
+  2px 2px black,
+  2px -2px black,
+ -2px -2px black;
+}
+
+
+
+
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+
+.glow {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px blue, 0 0 20px blue;
+  }
+  
+ 
+}
+
+/* media queries */
+@media (min-width: 530px) {
+  h1 {
+    padding-top: 50px;
+  }
+  .player1,
+  .instruction {
+    font-size: 80%;
+  }
+  #game {
+    font-size: 80%;
+  }
+  .controlBtns {
+    position: relative;
+    margin: 5% 10%;
+    padding: 30px 50px;
+  }
+  #startBtn,
+  #guessBtn,
+  #playAgain {
+    font-size: 80%;
+  }
+  #startBtn {
+    top: 15%;
+    left: 10%;
+  }
+  input {
+    width: 60px;
+    height: 45px;
+  }
+
+}
+
+
+@media (min-width: 650px) {
+  .life {
+    top: 2%;
+    left: 45%;
+  }
+  .player1,
+  .instruction {
+    font-size: 100%;
+  }
+  #game {
+    font-size: 100%;
+  }
+  #startBtn,
+  #guessBtn,
+  #playAgain {
+    font-size: 100%;
+  }
+  #startBtn {
+    top: 15%;
+    left: 10%;
+  }
+  #playAgain {
+    top: 125%;
+  }
+  
+  .all {
+    max-width: 750px;
+  }
+  .top {
+    width: 750px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+}
+
+
+/* @media (min-width: 950px) {
+  #startBtn,
+  #guessBtn,
+  #playAgain {
+    padding: 20px 30px;
+  }
+  #playAgain {
+    top: 160%;
+  }
+  #guessBtn {
+    top: 95%;
+  }
+  input {
+    top:110%;
+  }
+  input {
+    width: 70px;
+    height: 50px;
+  }
+
+  .top,
+  .staticBg {
+    max-width: 80%;
+  }
+
+} */

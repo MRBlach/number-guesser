@@ -1,5 +1,8 @@
 <h1 align="center">
-Number Guesser
+  <br>
+  <img src="https://i.ibb.co/4FRFktC/grid3.jpg" width="300px">
+  <br>
+  Number Guesser
 </h1> 
 <p align="center">
   <a href="https://saythanks.io/to/melodyblachowicz%40gmail.com">
